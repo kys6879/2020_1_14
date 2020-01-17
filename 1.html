@@ -3,17 +3,91 @@
 <head>
     <title>GiveMeThatdydgus</title>
     <meta charset="utf-8">
+    <style type="text/css">
+    body{
+    	text-align: center;
+    }
+    #websterbdropthatbeatbomb{
+    	display: grid;
+    	grid-template-columns: 0.5fr 9.5fr;
+    }
+    .cat{
+    	border-right: 2px solid black;
+    }
+    ol{
+    	padding: 20px;
+    	list-style: none;
+    }
+    .header{
+    	border-bottom: 2px solid black;
+    	text-align: left;
+    	padding-left: 20px;
+    }
+    a{
+    	text-align: center;
+    	text-decoration-line: none;
+    	color: black;
+    }
+    .content{
+    	display: grid;
+    	grid-template-rows: 9fr 1fr;
+    }
+    .footer{
+    	border-top: 2px solid black;
+    	padding: 10px;
+    }
+    .article{
+    	padding-bottom: 20px;
+    }
+    @media(max-width: 680px){
+    #websterbdropthatbeatbomb{
+        display: block;
+
+    }
+    .article{
+    border-left: none;
+}
+    h1{
+        border-bottom: none;       
+    }
+    ol{
+        text-align: center;
+        /*border-bottom: 2px solid black;*/
+        display: inline;
+    }
+    .cat{
+        border: solid 2px black;
+    }
+    .header{
+    	border: none;
+    	text-align: center;
+    }
+
+}
+</style>
 </head>
 <body>
+	<div class="header">
     <h1><a href="index.html">WEB</a></h1>
-    <p></p>
+    </div>
+    <div id="websterbdropthatbeatbomb">
+    <div class="cat">
     <ol>
     <li><a href="1.html">HTML</a></li>
     <li><a href="2.html">CSS</a></li>
     <li><a href="3.html">javascript</a></li>
     </ol>
-    <p></p>
-    <h1>HTML</h1>
+    </div>
+
+    <div class="content">
+
+    <div class="article">
+    <h2>HTML</h2>
     <img src="http://newsroom.etomato.com/userfiles/181214hiteeyrrin.jpg" width="500px" height="500px">
+    </div>
+    <div class="footer">
+    		asd
+    </div>
+    </div>
 </body>
 </html>
