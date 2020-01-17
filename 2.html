@@ -7,6 +7,9 @@
 .header{
     font-size: 60px;
 }
+.cat{
+    border-right: 2px solid black;
+}
 h1{
     font-size : 60px;
     margin: 0;
@@ -32,22 +35,39 @@ ol{
 #websterbdropthatbeatbomb{
     display: grid;
     grid-template-columns: 0.5fr 9.5fr;
+    border-bottom: solid 2px black;
 }
-.article{
-    border-left: 2px solid black;
-}
+
+
 @media(max-width: 680px){
     #websterbdropthatbeatbomb{
         display: block;
 
     }
-    .article{
-    border-left: none;
-}
+    h1{
+        border-bottom: none;       
+    }
+    ol{
+        text-align: center;
+        /*border-bottom: 2px solid black;*/
+        display: inline;
+        padding: 0;
+    }
+    .cat{
+        border: 2px solid black;
+    }
 
 }
 li{
     text-align: center;
+}
+.content{
+    display: grid;
+    grid-auto-rows: 9fr 1fr;
+}
+.footer{
+ padding: 30px;
+ border-top: 2px solid black;
 }
 h2{
     font-size: 25px;
@@ -66,10 +86,9 @@ h2{
 <body style="background: orangered;text-align: center ;margin: 0;">
 
     <h1><a class="header" href="index.html">WEB</a></h1>
-
     <div id="websterbdropthatbeatbomb">
 
-    <div>
+    <div class="cat">
     <ol>
     <li><a href="1.html">HTML</a></li>
     <li><a href="2.html">CSS</a></li>
@@ -77,6 +96,7 @@ h2{
     </ol>
     </div>
 
+<div id="content">
     <div class="article">
     <h2>CSS</h2>
 
@@ -172,6 +192,10 @@ h2{
         </div>
     </div>
     </div>
+<div class="footer">
+    
+</div>
+</div>
 </div>
     </body>
 </html>
